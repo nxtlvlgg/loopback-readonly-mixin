@@ -5,7 +5,7 @@ Loopback mixin to make model properties readonly, and allow write access for spe
 `npm install https://github.com/nxtlvlgg/loopback-readonly-mixin.git --save`
 
 ### Instructions
-Add the mixin to your loopback model:
+Add the mixin to your loopback app. Then add it to your loopback model:
 
 ```
 {
@@ -75,7 +75,7 @@ You can also add the ability for specific roles to be allowed to write to a prop
 ```
 
 ### Dependancies
-This mixin uses a custom method on the User model `User.isInRoles` to determine if the current access token being used has a role in `acceptedRoles` array.
+This mixin uses a custom method on the User model `User.isInRoles` to determine if the current access token being used has a role in `acceptedRoles` array. [Example User.isInRoles](https://gist.github.com/nxtlvlgg/384a08b5599b2bdc55b2cbccbbfcf26e)
 
 ### License
 Copyright (c) 2016, Next Level Media Inc
